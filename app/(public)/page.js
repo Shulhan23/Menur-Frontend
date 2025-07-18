@@ -1,5 +1,4 @@
 'use client'
-import Image from 'next/image'
 import dynamic from 'next/dynamic'
 
 const PetaDesa = dynamic(() => import('@/components/public/PetaDesa'), { ssr: false })
