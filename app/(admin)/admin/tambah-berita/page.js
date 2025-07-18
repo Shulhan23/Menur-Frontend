@@ -31,9 +31,10 @@ export default function TambahBeritaPage() {
     setLoading(true)
 
     try {
-      const csrf = await fetch('/laravel-api/sanctum/csrf-cookie', {
-        credentials: 'include'
+      await fetch('/laravel-api/sanctum/csrf-cookie', {
+      credentials: 'include'
       })
+
 
       const token = decodeURIComponent(
         document.cookie
