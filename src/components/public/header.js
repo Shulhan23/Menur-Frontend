@@ -23,7 +23,6 @@ export default function Header() {
     { label: 'Struktur', href: '/struktur' },
     { label: 'Administrasi', href: '/administrasi' },
     { label: 'Berita', href: '/berita' },
-    { label: 'Login', href: '/login' }
   ]
 
   return (

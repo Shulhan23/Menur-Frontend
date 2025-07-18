@@ -2,7 +2,7 @@
 import Image from 'next/image'
 import dynamic from 'next/dynamic'
 
-const PetaDesa = dynamic(() => import('@/components/PetaDesa'), { ssr: false })
+const PetaDesa = dynamic(() => import('@/components/public/PetaDesa'), { ssr: false })
 
 export default function HomePage() {
   return (

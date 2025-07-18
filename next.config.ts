@@ -1,16 +1,13 @@
-import type { NextConfig } from 'next'
-
-/** @type {import('next').NextConfig} */
+// next.config.js for production
 const nextConfig = {
   async rewrites() {
     return [
       {
         source: '/laravel-api/:path*',
-        destination: 'http://localhost:8000/:path*',
+        destination: 'https://api.desamenur.com/:path*',
       },
     ]
   },
-};
+}
 
-export default nextConfig;
-
+module.exports = nextConfig
